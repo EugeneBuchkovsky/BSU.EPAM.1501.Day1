@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace BSU.EPAM._1501.Day1.Bychkovksy.Task1
 {
-    class Method
+    public class Method
     {
+        private readonly static double eps = 0.00001;
         /// <summary>
         /// calculating the roots of Newton's method
         /// </summary>
         /// <param name="number"></param>
         /// <param name="pow"></param>
-        /// <returns></returns>
+        /// <returns>double</returns>
         public static double Newton(double number, double pow)
         {
-            double eps = 0.0000001;
             double x = ((pow - 1) * number + number / Math.Pow(number, pow - 1)) / pow;
             double xn;
             double temp;
