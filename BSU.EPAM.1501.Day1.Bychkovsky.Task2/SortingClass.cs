@@ -9,24 +9,6 @@ namespace BSU.EPAM._1501.Day1.Bychkovsky.Task2
     class SortingClass
     {
         /// <summary>
-        /// Sort by sum element of the row ascending.
-        /// </summary>
-        /// <param name="sourceArray"></param>
-        public static void BySumElementAscending(int[][] sourceArray)
-        {
-            SortArray.Sort(sourceArray, PreparationForSort.SumElement(sourceArray), true);
-        }
-
-        /// <summary>
-        /// Sort by sum element of the row descending.
-        /// </summary>
-        /// <param name="sourceArray"></param>
-        public static void BySumElementDescending(int[][] sourceArray)
-        {
-            SortArray.Sort(sourceArray, PreparationForSort.SumElement(sourceArray), false);
-        }
-
-        /// <summary>
         /// Sort by maximum element ascending.
         /// </summary>
         /// <param name="sourceArray"></param>
@@ -60,6 +42,24 @@ namespace BSU.EPAM._1501.Day1.Bychkovsky.Task2
         public static void ByMinElementDescending(int[][] sourceArray)
         {
             SortArray.Sort(sourceArray, PreparationForSort.MinElement(sourceArray), false);
+        }
+
+        /// <summary>
+        /// Sort by sum element of the row ascending.
+        /// </summary>
+        /// <param name="sourceArray"></param>
+        public static void BySumElementAscending(int[][] sourceArray)
+        {
+            SortArray.Sort(sourceArray, PreparationForSort.SumElement(sourceArray), true);
+        }
+
+        /// <summary>
+        /// Sort by sum element of the row descending.
+        /// </summary>
+        /// <param name="sourceArray"></param>
+        public static void BySumElementDescending(int[][] sourceArray)
+        {
+            SortArray.Sort(sourceArray, PreparationForSort.SumElement(sourceArray), false);
         }
     }
 }

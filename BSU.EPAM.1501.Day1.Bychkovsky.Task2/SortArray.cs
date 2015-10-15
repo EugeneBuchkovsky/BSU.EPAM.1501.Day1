@@ -24,6 +24,7 @@ namespace BSU.EPAM._1501.Day1.Bychkovsky.Task2
                         int temp = arrayValues[j];
                         arrayValues[j] = arrayValues[j + 1];
                         arrayValues[j + 1] = temp;
+
                         int[] tempArray = sourceArray[j];
                         sourceArray[j] = sourceArray[j + 1];
                         sourceArray[j + 1] = tempArray;
